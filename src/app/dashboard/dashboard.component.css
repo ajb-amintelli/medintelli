@@ -1,0 +1,96 @@
+.dashboard-grid {
+  padding: 16px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 16px;
+}
+
+.dashboard-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  text-align: center;
+  background-color: var(--background-color);
+  border-radius: var(--border-radius);
+}
+
+mat-card {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.2rem;
+}
+
+mat-icon {
+  opacity: 70%;
+  height: 6em;
+  width: 6em;
+  margin-top: 10px;
+}
+
+label {
+  font-size: 1.6rem;
+  margin: 1em 0;
+}
+
+mat-card-footer label {
+  font-size: 1rem;
+  margin: 0.5em;
+}
+
+.mat-card-footer mat-icon {
+  width: 5em;
+  height: 5em;
+  opacity: 70%;
+  margin-left: 5px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.row div {
+  width: 80%;
+}
+
+.row mat-icon {
+  width: 4em;
+  height: 4em;
+}
+
+::ng-deep .mat-mdc-select-arrow {
+  display: none !important;
+}
+
+@media (max-width: 768px) {
+  .dashboard-grid {
+    grid-template-columns: repeat(2, 1fr); /* Two columns for medium screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .dashboard-grid {
+    grid-template-columns: 1fr; /* One column for small screens */
+  }
+}
+
+/* Color styling for grid columns */
+ .dashboard-grid .mat-grid-tile:nth-child(4n + 1) .dashboard-card {
+  background-color: #63425b;
+}
+
+.dashboard-grid .mat-grid-tile:nth-child(4n + 2) .dashboard-card {
+  background-color: #83627B;
+}
+
+.dashboard-grid .mat-grid-tile:nth-child(4n + 3) .dashboard-card {
+  background-color: #BB9290;
+}
+
+.dashboard-grid .mat-grid-tile:nth-child(4n + 4) .dashboard-card {
+  background-color: #EE901C;
+} 
+

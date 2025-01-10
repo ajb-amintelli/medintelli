@@ -1,0 +1,10 @@
+.field-detail {
+    padding: 16px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.field-detail h2 {
+    margin-bottom: 16px;
+}

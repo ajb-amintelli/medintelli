@@ -1,0 +1,14 @@
+<mat-grid-list cols="4" rowHeight="200px" gutterSize="16px" class="dashboard-grid">
+    <mat-grid-tile *ngFor="let field of fields" [colspan]="1" [rowspan]="1">
+      <mat-card class="dashboard-card">
+        <mat-form-field appearance="fill">
+          <mat-label>{{ field.name }}</mat-label>
+          <mat-select [(value)]="field.selectedValue" (selectionChange)="onSelectionChange(field)">
+            <mat-option *ngFor="let option of field.options" [value]="option">
+              {{ option }}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </mat-card>
+    </mat-grid-tile>
+</mat-grid-list>

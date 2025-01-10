@@ -1,0 +1,87 @@
+.holdEntireScreen {
+    min-height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: aqua;
+}
+
+.mat-sidenav {
+    z-index: 1000;  /* Ensure it's above the main content */
+}
+
+.mat-sidenav-content {
+    z-index: 1;  /* Ensure the content is below the navbar */
+}
+
+.right-menu-icon {
+    /* font-size: 1.2rem;  */
+    text-align: center; 
+    vertical-align: middle;
+    margin-right: 0.5rem !important;
+}
+
+.mat-sidenav {
+    background-color: var(--nav-bar-secondary);
+    /* background-color: #661F58; */
+    color: white;
+    padding-left: 0.3rem;
+    z-index: 10;
+}
+
+::ng-deep .mat-badge-content {
+    background: var(--accent-color) !important;
+    color: var(--primary-color) !important;
+}
+
+.nav-icons {
+    text-align: center; 
+    vertical-align: middle;
+    margin: 1rem 1rem 1rem 0.6rem !important;
+    padding-bottom: 0.2rem;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.svg-icons {
+    text-align: center; 
+    vertical-align: middle;
+    margin: 1rem 0.9rem 1rem 0.5rem !important;
+    padding-bottom: 0.2rem;
+    color: white;
+    transform: scale(0.8);
+}
+
+.sidenav-button {
+    padding-left: 0 !important;
+}
+
+::ng-deep .notificationMenu {
+    background-color: rgb(219, 217, 217);
+    color: rgb(50, 49, 49);
+    max-width: 260px !important;
+}
+
+::ng-deep .mdc-list {
+    padding: 0 !important;
+}
+
+.div_hover:hover {
+    /* background-color: #2799e0; */
+    background-color: #E27169;
+    color: white;
+  }
+
+@media (max-width: 576px) {
+
+    .hide-on-mobile {
+        display: none;
+    }
+}
+
+a {
+    text-decoration: none !important;
+    color: inherit;
+    font-size: 1rem;
+}

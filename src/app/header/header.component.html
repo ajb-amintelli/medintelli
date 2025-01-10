@@ -1,0 +1,72 @@
+<mat-toolbar style="background-color: var(--nav-bar);">
+    <mat-toolbar-row style="padding: 0 !important;">
+
+        <!-- Hamburger Menu for Navigation (Future) -->
+        <!-- <button>
+            <mat-icon aria-label="Side nav toggle icon" style="color: var(--primary-color);">menu</mat-icon>
+        </button> -->
+
+
+        <!-- Home Button (Redirect to Home Page) -->
+        <a [routerLink]="['/']" title="Go back home">
+            <mat-icon style="color: var(--primary-color);">home</mat-icon>
+        </a>
+
+        <!-- Current Page Title (Optional) -->
+        <!-- <span *ngIf="currentPage" class="hide-on-mobile" style="font-size: 1rem; color: var(--primary-color);">
+            {{ currentPage }}
+        </span> -->
+
+        <!-- Logo (Placeholder) at the Center -->
+        <span style="flex: 1 1 auto; text-align: center;">
+            <img src="../../../assets/images/account.png"
+                style="height: 3rem; vertical-align: sub !important;">
+        </span>
+
+        <!-- Notification Icon (With Badge) -->
+        <!-- <span>
+            <button *ngIf="notificationCount > 0" mat-icon-button [matMenuTriggerFor]="notificationMenu">
+                <mat-icon matBadge="{{ notificationCount }}" style="font-size: 1.5rem; color: var(--primary-color);">
+                    notifications
+                </mat-icon>
+            </button>
+
+            <!-- Notification Menu 
+            <mat-menu #notificationMenu="matMenu">
+                <div *ngFor="let notification of notifications">
+                    <p style="font-size: 0.85rem; font-weight: 600;" (click)="viewNotification(notification)">
+                        {{ notification.message }}
+                    </p>
+                </div>
+            </mat-menu>
+        </span> -->
+
+        <!-- User Profile and Options -->
+        <span>
+            <!-- Profile Picture -->
+            <img *ngIf="userProfilePicture" src="{{ userProfilePicture }}"
+                style="width: 2rem; height: 2rem; border-radius: 50%;" (click)="editProfile()">
+            <img *ngIf="!userProfilePicture" src="../../../assets/images/default.png"
+                style="width: 2rem; height: 2rem; border-radius: 50%;" (click)="editProfile()">
+
+            <!-- More Options Menu -->
+            <!-- <button mat-icon-button [matMenuTriggerFor]="userMenu">
+                <mat-icon style="color: var(--primary-color);">more_vert</mat-icon>
+            </button>
+
+            <!-- User Options Menu 
+            <mat-menu #userMenu="matMenu">
+                <button mat-menu-item (click)="editProfile()">
+                    <mat-icon>person</mat-icon> Edit Profile
+                </button>
+                <button mat-menu-item (click)="resetPassword()">
+                    <mat-icon>build</mat-icon> Reset Password
+                </button>
+                <button mat-menu-item (click)="logout()">
+                    <mat-icon>power_settings_new</mat-icon> Logout
+                </button>
+            </mat-menu> -->
+        </span>
+
+    </mat-toolbar-row>
+</mat-toolbar>

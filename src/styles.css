@@ -1,0 +1,19 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+:root {
+    --primary-color: #00796b;  /* Hospital's primary color (teal green) */
+    --secondary-color: #004d40;  /* Secondary color (dark teal) */
+    --background-color: #ffffff;  /* White background for clarity */
+    --nav-bar: #e0f2f1;  /* Light teal background for the navbar */
+    --icon-color: #004d40;  /* Darker color for icons (to complement the primary color) */
+    --border-radius: 8px;  /* Smooth rounded corners for buttons and icons */
+    --font-family: 'Helvetica Neue', Arial, sans-serif;  /* Clean, readable font */
+    --text-color: #333333;  /* Dark grey text for good contrast */
+    --text-muted-color: #757575;  /* Muted text for less important information */
+    --button-color: #26a69a;  /* Teal button color */
+    --hover-color: #00796b;  /* Darker teal for hover states */
+  }
+  
